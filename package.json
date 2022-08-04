@@ -1,12 +1,15 @@
 {
-  "name": "@example/docs",
+  "homepage": "https://daraja-sdks.github.io",
+  "name": "daraja-sdks",
   "version": "0.0.1",
   "private": true,
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@algolia/client-search": "^4.13.1",
